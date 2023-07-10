@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    background: linear-gradient(0deg, #f3c308, #3972ba);
+  }
+  .conteudo {
+    position: absolute;
+    width: 30rem;
+    height: 20rem;
+    padding:0.5rem 1rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background: #cfe5de;
+    
+}
+
+.conteudoDasQuestoes, .conteudoDasRespostas{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    height: 16rem;
+  }
+  .conteudoDasQuestoes.desativado, .conteudoDasRespostas.desativado {
+    display: none;
+  }
+  .botoes {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .conteudoDasRespostas {
+    font-size: 24pt;
+    font-weight: 900;
+  }
+  
+  .btn{
+    position: relative;
+    /* width: 5.5rem; */
+    height: 4rem;
+  
+    padding: 10px;
+    border-radius: 10px;
+    background: #3972ba;
+  
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #cfe5de;
+    
+    font-size: 16pt;
+    
+    transition: 0.4s;
+    
+}
+.btn:hover {
+    background-color: #7fcbf1;
+    color: #000000;
+}
+.btn.reiniciar {
+    background: #f3c308;
+    color: #000000;
+    transition: 0.3s;
+}
+.btn.reiniciar:hover {
+    filter: brightness(0.8);
+}
